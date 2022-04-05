@@ -1,0 +1,118 @@
+.app__about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+
+  @media screen and (min-width: 1440px) {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.app__about-heading {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(16px + 0.3vmin);
+    font-weight: 200;
+
+    span {
+      display: inline-block;
+      background: var(--primary-color);
+      width: 60px;
+      height: 4px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  h1 {
+    font-size: calc(20px + 1vmin);
+    text-align: start;
+    color: var(--primary-text-color);
+  }
+}
+
+.app__about-info {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .app__about-info-img {
+      order: 2;
+      height: 100%;
+    }
+
+    .app__about-info-intro {
+      width: 100%;
+      margin-right: 50px;
+    }
+  }
+}
+
+.app__about-info-img {
+  display: flex;
+  align-items: center;
+  img {
+    width: 300px;
+    border-radius: 50%;
+    height: auto;
+    margin: 0 auto 20px;
+    object-fit: cover;
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
+  }
+}
+
+.app__about-info-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(14px + 0.3vmin);
+    font-weight: 200;
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+
+    span {
+      display: inline-block;
+      background: var(--primary-color);
+      width: 30px;
+      height: 4px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  p {
+    font-size: calc(14px + 0.2vmin);
+    font-weight: 200;
+    text-align: start;
+    color: var(--secondary-text-color);
+    letter-spacing: 1.2px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}

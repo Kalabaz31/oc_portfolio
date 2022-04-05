@@ -3,7 +3,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import works from "./works";
-import abouts from "./abouts";
+import about from "./about";
 import contact from "./contact";
 
 export default createSchema({
@@ -14,7 +14,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     works,
-    abouts,
+    about,
     contact,
   ]),
 });

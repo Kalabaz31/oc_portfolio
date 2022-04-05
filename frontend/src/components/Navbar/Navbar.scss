@@ -1,0 +1,60 @@
+.app__navbar {
+  background: var(--dark-background-color);
+  width: 100%;
+}
+
+.app__navbar-container {
+  width: 70%;
+  min-height: 5vmin;
+  overflow: hidden;
+  padding: 20px 0;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+    a {
+      padding: 0;
+    }
+  }
+}
+
+.app__navbar-logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.app__navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    a {
+      padding: 10px 20px;
+      font-size: calc(10px + 0.8vmin);
+      color: var(--secondary-text-color);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--primary-text-color);
+
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    justify-content: space-evenly;
+    li {
+      a {
+        padding: 0;
+      }
+    }
+  }
+}

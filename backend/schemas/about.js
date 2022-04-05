@@ -1,16 +1,16 @@
 export default{
-    name:'abouts',
-    title:'Abouts',
+    name:'about',
+    title:'About',
     type: 'document',
     fields:[
         {
-            name:'title',
-            title:'Title',
+            name:'selfIntro',
+            title:'SelfIntro',
             type:'string'
         },
         {
-            name:'description',
-            title:'Description',
+            name:'skills',
+            title:'Skills',
             type:'string'
         },
         {
